@@ -104,7 +104,13 @@
 	</br></br></br>
 	<!--/ service-->
 	<!--cta-->
-	
+
+	<div id="outer" style="width:100%">  
+    <div id="inner">
+    <a href="#testimonial" class="btn btn-appoint" style="margin-right:35px;">Add New Patient</a>
+	<a href="#contact" class="btn btn-appoint">List Of Patients</a>
+	</div>
+    </div>
 	<!--cta-->
 	<!--about-->
 	<section id="about" class="section-padding">
@@ -123,7 +129,7 @@
 			          <div class="more-features-box-text">
 			            <div class="more-features-box-text-icon"> <i class="fa fa-angle-right" aria-hidden="true"></i> </div>
 			            <div class="more-features-box-text-description">
-				            <h3>Doctors.</h3>
+				            <h3>Doctors</h3>
 				            <p><div class="col-md-4 col-sm-4"></div></div>
 					
 				</div>
@@ -277,118 +283,69 @@
 		</div>
 	</section>
 	<!--/ about-->
-	<!--doctor team-->
-	<section id="doctor-team" class="section-padding">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<h2 class="ser-title">Meet Our Doctors!</h2>
-					<hr class="botm-line">
-				</div>
-				<div class="col-md-3 col-sm-3 col-xs-6">
-			      <div class="thumbnail"> 
-			      	<img src="img/doctor1.jpg" alt="..." class="team-img">
-			        <div class="caption">
-			          <h3>Jessica Wally</h3>
-			          <p>Doctor</p>
-			          <ul class="list-inline">
-			            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-			            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-			            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-			          </ul>
-			        </div>
-			      </div>
-			    </div>
-			    <div class="col-md-3 col-sm-3 col-xs-6">
-			      <div class="thumbnail"> 
-			      	<img src="img/doctor2.jpg" alt="..." class="team-img">
-			        <div class="caption">
-			          <h3>Iai Donas</h3>
-			          <p>Doctor</p>
-			          <ul class="list-inline">
-			            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-			            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-			            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-			          </ul>
-			        </div>
-			      </div>
-			    </div>
-			    <div class="col-md-3 col-sm-3 col-xs-6">
-			      <div class="thumbnail"> 
-			      	<img src="img/doctor3.jpg" alt="..." class="team-img">
-			        <div class="caption">
-			          <h3>Amanda Denyl</h3>
-			          <p>Doctor</p>
-			          <ul class="list-inline">
-			            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-			            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-			            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-			          </ul>
-			        </div>
-			      </div>
-			    </div>
-			    <div class="col-md-3 col-sm-3 col-xs-6">
-			      <div class="thumbnail"> 
-			      	<img src="img/doctor4.jpg" alt="..." class="team-img">
-			        <div class="caption">
-			          <h3>Jason Davis</h3>
-			          <p>Doctor</p>
-			          <ul class="list-inline">
-			            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-			            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-			            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-			          </ul>
-			        </div>
-			      </div>
-			    </div>
-			</div>
-		</div>
-	</section>
-	<!--/ doctor team-->
 	<!--testimonial-->
 	<section id="testimonial" class="section-padding">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12">
-					<h2 class="ser-title">see what patients are saying?</h2>
-					<hr class="botm-line">
-				</div>
-				<div class="col-md-4 col-sm-4">
-					<div class="testi-details">
-						<!-- Paragraph -->
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-					</div>
-					<div class="testi-info">
-						<!-- User Image -->
-						<a href="#"><img src="img/thumb.png" alt="" class="img-responsive"></a>
-						<!-- User Name -->
-						<h3>Alex<span>Texas</span></h3>
-					</div>
-				</div>
-			    <div class="col-md-4 col-sm-4">
-					<div class="testi-details">
-						<!-- Paragraph -->
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-					</div>
-					<div class="testi-info">
-						<!-- User Image -->
-						<a href="#"><img src="img/thumb.png" alt="" class="img-responsive"></a>
-						<!-- User Name -->
-						<h3>Alex<span>Texas</span></h3>
-					</div>
-				</div>
-			    <div class="col-md-4 col-sm-4">
-					<div class="testi-details">
-						<!-- Paragraph -->
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-					</div>
-					<div class="testi-info">
-						<!-- User Image -->
-						<a href="#"><img src="img/thumb.png" alt="" class="img-responsive"></a>
-						<!-- User Name -->
-						<h3>Alex<span>Texas</span></h3>
-					</div>
-				</div>
+				
+									        <form class="form-basic" method="post" action="#">
+            <h1 > Patient Details</h1>
+            <div class="form-row abc">
+                <label>
+                    <span>First name</span>
+                    <input type="text" name="name">
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label>
+                    <span>Last name</span>
+                    <input type="text" name="name">
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label>
+                    <span>Email</span>
+                    <input type="email" name="email">
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label>
+                    <span>Age</span>
+                    <input type="email" name="email">
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label>
+                    <span>Sex</span>
+                    <select name="dropdown">
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Others</option>
+                    </select>
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label>
+                    <span>Health Problems</span>
+                    <textarea name="textarea"></textarea>
+                </label>
+            </div>
+
+           
+
+            <div class="form-row">
+                <button type="submit">Add Patient</button>
+            </div>
+
+        </form>
+
+    </div>
+
 			</div>
 		</div>
 	</section>
@@ -414,50 +371,41 @@
 	<section id="contact" class="section-padding">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12">
+				<!--<div class="col-md-12">
 					<h2 class="ser-title">Contact us</h2>
-					<hr class="botm-line">
-				</div>
-				<div class="col-md-4 col-sm-4">
-			      <h3>Contact Info</h3>
-			      <div class="space"></div>
-			      <p><i class="fa fa-map-marker fa-fw pull-left fa-2x"></i>321 Awesome Street<br>
-			        New York, NY 17022</p>
-			      <div class="space"></div>
-			      <p><i class="fa fa-envelope-o fa-fw pull-left fa-2x"></i>info@companyname.com</p>
-			      <div class="space"></div>
-			      <p><i class="fa fa-phone fa-fw pull-left fa-2x"></i>+1 800 123 1234</p>
-			    </div>
-				<div class="col-md-8 col-sm-8 marb20">
-					<div class="contact-info">
-							<h3 class="cnt-ttl">Having Any Query! Or Book an appointment</h3>
-							<div class="space"></div>
-                            <div id="sendmessage">Your message has been sent. Thank you!</div>
-                            <div id="errormessage"></div>
-							<form action="" method="post" role="form" class="contactForm">
-							    <div class="form-group">
-                                    <input type="text" name="name" class="form-control br-radius-zero" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                                    <div class="validation"></div>
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" class="form-control br-radius-zero" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                                    <div class="validation"></div>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control br-radius-zero" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                                    <div class="validation"></div>
-                                </div>
-                                <div class="form-group">
-                                    <textarea class="form-control br-radius-zero" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                                    <div class="validation"></div>
-                                </div>
-                                
-								<div class="form-action">
-									<button type="submit" class="btn btn-form">Send Message</button>
-								</div>
-							</form>
-					</div>
-				</div>
+					<hr class="botm-line">-->
+
+
+<div>
+  <ul>
+    <li>
+      <img src="http://lorempixum.com/100/100/nature/1" />
+      <h3>Headline</h3>
+      <p>Lorem ipsum dolor sit amet...</p>
+    </li>
+      
+    <li>
+      <img src="http://lorempixum.com/100/100/nature/2" />
+      <h3>Headline</h3>
+      <p>Lorem ipsum dolor sit amet...</p>
+    </li>
+
+    <li>
+      <img src="http://lorempixum.com/100/100/nature/3" />
+      <h3>Headline</h3>
+      <p>Lorem ipsum dolor sit amet...</p>
+    </li>
+
+    <li>
+      <img src="http://lorempixum.com/100/100/nature/4" />
+      <h3>Headline</h3>
+      <p>Lorem ipsum dolor sit amet...</p>
+    </li>
+  </ul>
+</div>
+
+
+				
 			</div>
 		</div>
 	</section>
