@@ -188,6 +188,8 @@ services
 	margin-bottom: 25px;
 }
 .service-info{
+	padding-top: 40px;
+	display: block; 
 	margin-bottom: 20px;
 }
 .icon-info h4{
@@ -484,7 +486,10 @@ footer
     text-transform: none;
 }
 @media (min-width: 551px) and (max-width: 980px){
-
+ .section-title{
+ 	margin-left: 40px; 
+ 	margin-right: 40px; 
+ }
 }
 @media (min-width: 220px) and (max-width: 551px){
     .testi-info{
@@ -521,4 +526,15 @@ footer
     .banner-text h1{
         font-size: 24px;
     }
+}
+.more-features-box{
+	max-width: 700px;
+	max-height: 700px;
+}
+.pad{
+	padding :0px;
+	border-left-width: :-10px;
+}
+.section-title{
+	padding-top: 20px;
 }

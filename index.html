@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ABC</title>
+    <title>Medi+</title>
     <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
     <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
     <script src="https://cdn.firebase.com/libs/firebaseui/1.0.0/firebaseui.js"></script>
@@ -37,7 +37,7 @@
       // Initialize the FirebaseUI Widget using Firebase.
       var ui = new firebaseui.auth.AuthUI(firebase.auth());
       // The start method will wait until the DOM is loaded.
-      ui.start('#link1', uiConfig);
+      ui.start('#signin', uiConfig);
     </script>
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Candal">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
@@ -71,9 +71,9 @@
 				      <ul class="nav navbar-nav">
 				        <li class="active"><a href="#banner">Home</a></li>
 				        
-				        <li class=""><a href="#about">About</a></li>
+				        <li class=""><a href="#services">Services</a></li>
 				        <li class=""><a href="#testimonial">Testimonial</a></li>
-				        <li class=""><a href="#contact">Contact</a></li>
+				        <li class=""><a href="#footer">About</a></li>
 				      </ul>
 				    </div>
 				</div>
@@ -85,12 +85,22 @@
 						<div class="banner-logo text-center">
 							<img src="img/logo.png" class="img-responsive">
 						</div>
-						<div class="banner-text text-center">
-							<h1 class="white">Healthcare at your desk!!</h1>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod <br>tempor incididunt ut labore et dolore magna aliqua.</p>
-							<a id="link1" class="btn btn-appoint">SIGN UP</a>
-						</br>
 						</div>
+
+						<!-- sign in -->
+
+						<div id="signin" style="width: 385px; background-color: rgba(0,0,0,0.8); ; display: none; margin-left: 390px;">
+							
+						</div>
+
+						<!-- /sign in -->
+						<div id="link1" class="banner-text text-center">
+							<h1 class="white">Healthcare at your desk!!</h1>
+							
+							<button  class="btn btn-appoint" onclick="signin()">SIGN UP</button>
+						</br>
+						
+
 						<div class="overlay-detail text-center">
 			              
 			             </div>		
@@ -104,46 +114,49 @@
 	</br></br></br>
 	<!--/ service-->
 	<!--cta-->
-
-	<div id="outer" style="width:100%">  
-    <div id="inner">
-    <a href="#testimonial" class="btn btn-appoint" style="margin-right:35px;">Add New Patient</a>
-	<a href="#contact" class="btn btn-appoint">List Of Patients</a>
-	</div>
-    </div>
+		<div id="outer" style="width:100%">  
+	    <div id="inner" style="padding-left: 33% ">
+	    <button href="#new_patient_form" class="btn btn-appoint" style="margin-right:35px;" onclick="div_show();">Add New Patient</button>
+		<button href="#contact" class="btn btn-appoint" style="margin-left: 12%;">List Of Patients</button>
+		</div>
+	    </div>
 	<!--cta-->
 	<!--about-->
-	<section id="about" class="section-padding">
+	<section id="services" class="section-padding">
 		<div class="container">
 			<div class="row">
-				<!--<div class="col-md-3 col-sm-4 col-xs-12">
+				<div class="col-md-3 col-sm-4 col-xs-12">
 			        <div class="section-title">
 			          <h2 class="head-title lg-line">Doctor Plus <br>Our Services</h2>
 			          <hr class="botm-line">
-			          <p class="sec-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p>
-			          <a href="" style="color: #0cb8b6; padding-top:10px;">Know more..</a>
+			          <p class="sec-para">Our website provides the Doctors a simple,easy-to-use interface and an efficent way to maintain and retrieve the records of patients as well as connect with other Doctors  </p>
 			        </div>
-			    </div>-->
-			    <div class="col-md-9 col-sm-8 col-xs-12" style="float:left;">
+			    </div>
+			    <div class="col-md-9 col-sm-6 col-xs-10" style="float:left;">
 			       <div style="visibility: visible;" class="col-sm-9 more-features-box">
 			          <div class="more-features-box-text">
 			            <div class="more-features-box-text-icon"> <i class="fa fa-angle-right" aria-hidden="true"></i> </div>
 			            <div class="more-features-box-text-description">
-				            <h3>Doctors</h3>
+				            <h3>Doctors.</h3>
 				            <p><div class="col-md-4 col-sm-4"></div></div>
 					
 				</div>
+				<ol>
+				<li>
 				<div class="col-md-4 col-sm-4">
 					<div class="service-info">
 						<div class="icon">
-							<i class="fa fa-stethoscope"></i>
+							<i class="fa fa-wechat"></i>
 						</div>
 						<div class="icon-info">
-							<h4>Live Chat</h4>
+							<h4>Live Chat With Patients</h4>
 							
 						</div>
 					</div>
-
+				</div>
+				</li>
+				<li>
+				<div>
 					<div class="service-info">
 						<div class="icon">
 							<i class="fa fa-ambulance"></i>
@@ -154,54 +167,49 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4 col-sm-4">
-					<div class="service-info">
-						<div class="icon">
-							<i class="fa fa-stethoscope"></i>
-						</div>
-						<div class="icon-info">
-							<h4>Live Chat</h4>
-							
+				</li>
+				<li>
+					<div  class="col-md-4 col-sm-4">
+						<div class="service-info">
+							<div class="icon">
+								<i class="fa fa-sticky-note"></i>
+							</div>
+							<div class="icon-info">
+								<h4>Send Reports Online</h4>
+								
+							</div>
 						</div>
 					</div>
+				</li>
+				<li>
+					<div>
+						<div class="service-info">
+							<div class="icon">
+								<i class="fa fa-database"></i>
+							</div>
+							<div class="icon-info">
+								<h4>Patient Database Maintenance</h4>
+														
+							</div>
+						</div>
+					</div>
+				</li>
 				
-					<div class="service-info">
-						<div class="icon">
-							<i class="fa fa-ambulance"></i>
-						</div>
-						<div class="icon-info">
-							<h4>Emergency Services</h4>
-							
-						</div>
-					</div>
-				</div>
+			</ol>
+				</br></br>
 
-				<div class="col-md-4 col-sm-4">
-					<div class="service-info">
-						<div class="icon">
-							<i class="fa fa-user-md"></i>
-						</div>
-						<div class="icon-info">
-							<h4>Medical Counseling</h4>
-							
-						</div>
-					</div>
-					<div class="service-info">
-						<div class="icon">
-							<i class="fa fa-medkit"></i>
-						</div>
-						<div class="icon-info">
-							<h4>Premium Healthcare</h4>
-							
-						</div>
-
-					</div>
-				</div></p>
-				        </div>
-			          </div>
-			      </br></br>
-
-		<div class="col-md-9 col-sm-8 col-xs-12" style="float:left;">
+				<div class="container" class="pad">
+			<div class="row">
+				<div class="col-md-3 col-sm-4 col-xs-12">
+			        <div class="section-title">
+			          <h2 class="head-title lg-line"> Patient Plus <br>Our Services</h2>
+			          <hr class="botm-line">
+			          <p class="sec-para">
+			          		We Provide the Patients with an Android app in which the patients can access the reports which are uploaded by the doctor.The app includes all the emergency services which an elderly patient might need. 
+			          </p>
+			        </div>
+			    </div>
+			    <div class="col-md-9 col-sm-6 col-xs-10" style="float:left;">
 			       <div style="visibility: visible;" class="col-sm-9 more-features-box">
 			          <div class="more-features-box-text">
 			            <div class="more-features-box-text-icon"> <i class="fa fa-angle-right" aria-hidden="true"></i> </div>
@@ -210,17 +218,22 @@
 				            <p><div class="col-md-4 col-sm-4"></div></div>
 					
 				</div>
+				<ol>
+				<li>
 				<div class="col-md-4 col-sm-4">
 					<div class="service-info">
 						<div class="icon">
-							<i class="fa fa-stethoscope"></i>
+							<i class="fa fa-wechat"></i>
 						</div>
 						<div class="icon-info">
-							<h4>Live Chat</h4>
+							<h4>Live Chat With Doctors</h4>
 							
 						</div>
 					</div>
-
+				</div>
+				</li>
+				<li>
+				<div>
 					<div class="service-info">
 						<div class="icon">
 							<i class="fa fa-ambulance"></i>
@@ -231,185 +244,278 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4 col-sm-4">
-					<div class="service-info">
-						<div class="icon">
-							<i class="fa fa-stethoscope"></i>
-						</div>
-						<div class="icon-info">
-							<h4>Live Chat</h4>
-							
-						</div>
-					</div>
-				
-					<div class="service-info">
-						<div class="icon">
-							<i class="fa fa-ambulance"></i>
-						</div>
-						<div class="icon-info">
-							<h4>Emergency Services</h4>
-							
+				</li>
+				<li>
+					<div style="display: inline-block;" class="col-md-4 col-sm-4">
+						<div class="service-info">
+							<div class="icon">
+								<i class="fa fa-android"></i>
+							</div>
+							<div class="icon-info">
+								<h4>Android Application</h4>
+								
+							</div>
 						</div>
 					</div>
+				</li>
+				<li>
+					<div>
+						<div class="service-info">
+							<div class="icon">
+							<i class="fa fa-sticky-note-o"></i>
+							</div>
+							<div class="icon-info">
+								<h4>See Reports And Prescriptions Online</h4>
+								
+							</div>
+						</div>
+					</div>
+				</li>
+			</ol>
+				</br></br>
+	</section>
+	<br>
+	</br>
+	<br></br>
+	<br></br>
+	<br></br>
+	<!--/ about-->
+	<!--doctor team-->
+	<section id="doctor-team" class="section-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="ser-title">Meet Our Doctors!</h2>
+					<hr class="botm-line">
 				</div>
-				
-				<div class="col-md-4 col-sm-4">
-					<div class="service-info">
-						<div class="icon">
-							<i class="fa fa-user-md"></i>
-						</div>
-						<div class="icon-info">
-							<h4>Medical Counseling</h4>
-							
-						</div>
-					</div>
-					<div class="service-info">
-						<div class="icon">
-							<i class="fa fa-medkit"></i>
-						</div>
-						<div class="icon-info">
-							<h4>Premium Healthcare</h4>
-							
-						</div>
-
-					</div>
-				</div></p>
-				        </div>
-			          </div>
-			            </div>
+				<div class="col-md-3 col-sm-3 col-xs-6">
+			      <div class="thumbnail"> 
+			      	<img src="img/doctor1.jpg" alt="..." class="team-img">
+			        <div class="caption">
+			          <h3>Jessica Wally</h3>
+			          <p>Doctor</p>
+			          <ul class="list-inline">
+			            <li><a><i class="fa fa-facebook"></i></a></li>
+			            <li><a><i class="fa fa-twitter"></i></a></li>
+			            <li><a><i class="fa fa-google-plus"></i></a></li>
+			          </ul>
 			        </div>
+			      </div>
+			    </div>
+			    <div class="col-md-3 col-sm-3 col-xs-6">
+			      <div class="thumbnail"> 
+			      	<img src="img/doctor2.jpg" alt="..." class="team-img">
+			        <div class="caption">
+			          <h3>Iai Donas</h3>
+			          <p>Doctor</p>
+			          <ul class="list-inline">
+			            <li><a><i class="fa fa-facebook"></i></a></li>
+			            <li><a><i class="fa fa-twitter"></i></a></li>
+			            <li><a><i class="fa fa-google-plus"></i></a></li>
+			          </ul>
+			        </div>
+			      </div>
+			    </div>
+			    <div class="col-md-3 col-sm-3 col-xs-6">
+			      <div class="thumbnail"> 
+			      	<img src="img/doctor3.jpg" alt="..." class="team-img">
+			        <div class="caption">
+			          <h3>Amanda Denyl</h3>
+			          <p>Doctor</p>
+			          <ul class="list-inline">
+			            <li><a><i class="fa fa-facebook"></i></a></li>
+			            <li><a><i class="fa fa-twitter"></i></a></li>
+			            <li><a><i class="fa fa-google-plus"></i></a></li>
+			          </ul>
+			        </div>
+			      </div>
+			    </div>
+			    <div class="col-md-3 col-sm-3 col-xs-6">
+			      <div class="thumbnail"> 
+			      	<img src="img/doctor4.jpg" alt="..." class="team-img">
+			        <div class="caption">
+			          <h3>Jason Davis</h3>
+			          <p>Doctor</p>
+			          <ul class="list-inline">
+			            <li><a><i class="fa fa-facebook"></i></a></li>
+			            <li><a><i class="fa fa-twitter"></i></a></li>
+			            <li><a><i class="fa fa-google-plus"></i></a></li>
+			          </ul>
+			        </div>
+			      </div>
 			    </div>
 			</div>
 		</div>
 	</section>
-	<!--/ about-->
+	<!--/ doctor team-->
 	<!--testimonial-->
 	<section id="testimonial" class="section-padding">
 		<div class="container">
 			<div class="row">
-				
-									        <form class="form-basic" method="post" action="#">
-            <h1 > Patient Details</h1>
-            <div class="form-row abc">
-                <label>
-                    <span>First name</span>
-                    <input type="text" name="name">
-                </label>
-            </div>
-
-            <div class="form-row">
-                <label>
-                    <span>Last name</span>
-                    <input type="text" name="name">
-                </label>
-            </div>
-
-            <div class="form-row">
-                <label>
-                    <span>Email</span>
-                    <input type="email" name="email">
-                </label>
-            </div>
-
-            <div class="form-row">
-                <label>
-                    <span>Age</span>
-                    <input type="email" name="email">
-                </label>
-            </div>
-
-            <div class="form-row">
-                <label>
-                    <span>Sex</span>
-                    <select name="dropdown">
-                        <option>Male</option>
-                        <option>Female</option>
-                        <option>Others</option>
-                    </select>
-                </label>
-            </div>
-
-            <div class="form-row">
-                <label>
-                    <span>Health Problems</span>
-                    <textarea name="textarea"></textarea>
-                </label>
-            </div>
-
-           
-
-            <div class="form-row">
-                <button type="submit">Add Patient</button>
-            </div>
-
-        </form>
-
-    </div>
-
+				<div class="col-md-12">
+					<h2 class="ser-title">see what patients are saying?</h2>
+					<hr class="botm-line">
+				</div>
+				<div class="col-md-4 col-sm-4">
+					<div class="testi-details">
+						<!-- Paragraph -->
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+					<div class="testi-info">
+						<!-- User Image -->
+						<a href="#"><img src="img/thumb.png" alt="" class="img-responsive"></a>
+						<!-- User Name -->
+						<h3>Alex<span>Texas</span></h3>
+					</div>
+				</div>
+			    <div class="col-md-4 col-sm-4">
+					<div class="testi-details">
+						<!-- Paragraph -->
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+					<div class="testi-info">
+						<!-- User Image -->
+						<a href="#"><img src="img/thumb.png" alt="" class="img-responsive"></a>
+						<!-- User Name -->
+						<h3>Alex<span>Texas</span></h3>
+					</div>
+				</div>
+			    <div class="col-md-4 col-sm-4">
+					<div class="testi-details">
+						<!-- Paragraph -->
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+					<div class="testi-info">
+						<!-- User Image -->
+						<a href="#"><img src="img/thumb.png" alt="" class="img-responsive"></a>
+						<!-- User Name -->
+						<h3>Alex<span>Texas</span></h3>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
 	<!--/ testimonial-->
-	<!--cta 2-->
-	<section id="cta-2" class="section-padding">
-		<div class="container">
-			<div class=" row">
-				<div class="col-md-2"></div>
-	            <div class="text-right-md col-md-4 col-sm-4">
-	              <h2 class="section-title white lg-line">« A few words<br> about us »</h2>
-	            </div>
-	            <div class="col-md-4 col-sm-5">
-	              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a typek
-	              <p class="text-right text-primary"><i>— Medilap Healthcare</i></p>
-	            </div>
-	            <div class="col-md-2"></div>
-	        </div>
-		</div>
-	</section>
-	<!--cta-->
-	<!--contact-->
-	<section id="contact" class="section-padding">
+
+	<!-- new patient form -->
+
+<section id="new_patient_form" class="section-padding" style="  display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */">
 		<div class="container">
 			<div class="row">
-				<!--<div class="col-md-12">
-					<h2 class="ser-title">Contact us</h2>
-					<hr class="botm-line">-->
-
-
-<div>
-  <ul>
-    <li>
-      <img src="http://lorempixum.com/100/100/nature/1" />
-      <h3>Headline</h3>
-      <p>Lorem ipsum dolor sit amet...</p>
-    </li>
-      
-    <li>
-      <img src="http://lorempixum.com/100/100/nature/2" />
-      <h3>Headline</h3>
-      <p>Lorem ipsum dolor sit amet...</p>
-    </li>
-
-    <li>
-      <img src="http://lorempixum.com/100/100/nature/3" />
-      <h3>Headline</h3>
-      <p>Lorem ipsum dolor sit amet...</p>
-    </li>
-
-    <li>
-      <img src="http://lorempixum.com/100/100/nature/4" />
-      <h3>Headline</h3>
-      <p>Lorem ipsum dolor sit amet...</p>
-    </li>
-  </ul>
-</div>
-
-
+				<div class="col-md-12">
+					<h2 class="ser-title" style="font : rgb(255,255,255);">Patient's Details</h2>
+					<hr class="botm-line">
+				</div>
+				
+				<form action="" method="post" role="form" class="contactForm">
+				    <div class="form-group">
+                        <input type="text" name="name" class="form-control br-radius-zero" id="name" placeholder="Patient's First Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                        <div class="validation"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="name" class="form-control br-radius-zero" id="name" placeholder="Patient's Last Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                        <div class="validation"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control br-radius-zero" name="email" id="email" placeholder="Patient's Email" data-rule="email" data-msg="Please enter a valid email" />
+                        <div class="validation"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="number" class="form-control br-radius-zero" name="subject" id="subject" placeholder="Patient's Age" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                        <div class="validation"></div>
+                    </div>
+		            <div class="form-group">
+		                <label>
+		                    <span class="form-control br-radius-zero">Sex</span>
+		                    <select name="dropdown">
+		                        <option>Male</option>
+		                        <option>Female</option>
+		                        <option>Others</option>
+		                    </select>
+		                    <div class="validation"></div>
+		                </label>
+		            </div>
+                    <div class="form-group">
+                        <textarea class="form-control br-radius-zero" name="message" rows="5" data-rule="required" data-msg="Health Problems" placeholder="Health Issue"></textarea>
+                        <div class="validation"></div>
+                    </div>
+                    
+					<div class="form-action">
+						<button type="submit" class="btn btn-form" style="margin-bottom: 15px;">Add new Patient</button>
+					</div>
+					<div class="form-action">
+						<button type="submit" class="btn btn-form" onclick="div_hide()" style="display: inline-block;">Cancel</button>
+					</div>
+				</form>
+					
 				
 			</div>
 		</div>
 	</section>
-	<!--/ contact-->
+
+	<!-- /new patient form -->
+	
+<!-- 	
+	<section id="contact" class="section-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="ser-title">Contact us</h2>
+					<hr class="botm-line">
+				</div>
+				<div class="col-md-4 col-sm-4">
+			      <h3>Contact Info</h3>
+			      <div class="space"></div>
+			      <p><i class="fa fa-map-marker fa-fw pull-left fa-2x"></i>321 Awesome Street<br>
+			        New York, NY 17022</p>
+			      <div class="space"></div>
+			      <p><i class="fa fa-envelope-o fa-fw pull-left fa-2x"></i>info@companyname.com</p>
+			      <div class="space"></div>
+			      <p><i class="fa fa-phone fa-fw pull-left fa-2x"></i>+1 800 123 1234</p>
+			    </div>
+				<div class="col-md-8 col-sm-8 marb20">
+					<div class="contact-info">
+							<h3 class="cnt-ttl">Having Any Query! Or Book an appointment</h3>
+							<div class="space"></div>
+                            <div id="sendmessage">Your message has been sent. Thank you!</div>
+                            <div id="errormessage"></div>
+							<form action="" method="post" role="form" class="contactForm">
+							    <div class="form-group">
+                                    <input type="text" name="name" class="form-control br-radius-zero" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                    <div class="validation"></div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control br-radius-zero" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                                    <div class="validation"></div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control br-radius-zero" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                                    <div class="validation"></div>
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control br-radius-zero" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                                    <div class="validation"></div>
+                                </div>
+                                
+								<div class="form-action">
+									<button type="submit" class="btn btn-form">Send Message</button>
+								</div>
+							</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	 -->
 	<!--footer-->
 	<footer id="footer">
 		<div class="top-footer">
@@ -451,24 +557,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="footer-line">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 text-center">
-						© Copyright Medilab Theme. All Rights Reserved
-                        <div class="credits">
-                            <!-- 
-                                All the links in the footer should remain intact. 
-                                You can delete the links only if you purchased the pro version.
-                                Licensing information: https://bootstrapmade.com/license/
-                                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Medilab
-                            -->
-                            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-                        </div>
-					</div>
-				</div>
-			</div>
-		</div>
+		
 	</footer>
 	<!--/ footer-->
     
@@ -483,6 +572,17 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/custom.js"></script>
     <script src="contactform/contactform.js"></script>
-    
+    <script >
+    	function div_show(){
+    		document.getElementById('new_patient_form').style.display = "block";
+    	}
+    	function div_hide(){
+    		document.getElementById('new_patient_form').style.display = "none";
+    	}
+    	function signin(){
+    	    document.getElementById('signin').style.display = "block";
+    		document.getElementById('link1').style.display = "none";
+    	}
+    </script>
   </body>
 </html>
