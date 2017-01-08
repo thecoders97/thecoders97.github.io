@@ -25,7 +25,7 @@
     <script type="text/javascript">
       // FirebaseUI config.
       var uiConfig = {
-        signInSuccessUrl: 'http://www.facebook.com',
+        signInSuccessUrl: 'https://github.com/firebase/FirebaseUI-Web#signinsuccesscurrentuser-credential-redirecturl',
         signInOptions: [
           // Leave the lines as is for the providers you want to offer your users.
           firebase.auth.GoogleAuthProvider.PROVIDER_ID,
@@ -34,7 +34,7 @@
           firebase.auth.GithubAuthProvider.PROVIDER_ID,
           firebase.auth.EmailAuthProvider.PROVIDER_ID
         ],
-        // Terms of service url.
+        // Terms of service url. 
         tosUrl: '<your-tos-url>'
       };
 
@@ -43,7 +43,7 @@
       // The start method will wait until the DOM is loaded.
       ui.start('#firebaseui-auth-container', uiConfig);
     </script>
-      <script type="text/javascript">
+      <!-- <script type="text/javascript">
       initApp = function() {
         firebase.auth().onAuthStateChanged(function(user) {
           if (user) {
@@ -88,9 +88,11 @@
     <div id="sign-in-status"></div>
     <div id="sign-in"></div>
     <div id="account-details"></div>
-
+ -->
     <!-- The surrounding HTML is left untouched by FirebaseUI.
          Your app may use that space for branding, controls and other customizations.-->
+         </head>
+         <body>
     <h1>Welcome to My Awesome App</h1>
     <div id="firebaseui-auth-container"></div>
   </body>
