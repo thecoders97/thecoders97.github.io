@@ -1,20 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-   <meta charset="utf-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My Doctor | Login</title>
     <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
     <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
     <script src="https://cdn.firebase.com/libs/firebaseui/1.0.0/firebaseui.js"></script>
     <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
-     <!-- *******************************************************************************************
-       * TODO(DEVELOPER): Paste the initialization snippet from:
-       * Firebase Console > Overview > Add Firebase to your web app. *
-       ***************************************************************************************** -->
-
-<script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
-<script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/1.0.0/firebaseui.css" />
+    <script>
   // Initialize Firebase
   var config = {
     apiKey: "AIzaSyARl_11Gx0o-H7O72iixE-MC0AgspVXpBs",
@@ -25,17 +20,17 @@
   };
   firebase.initializeApp(config);
 </script>
-    <script src="https://cdn.firebase.com/libs/firebaseui/1.0.0/firebaseui.js"></script>
-    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/1.0.0/firebaseui.css" />
     <script type="text/javascript">
+
       // FirebaseUI config.
       var uiConfig = {
-        signInSuccessUrl: '<url-to-redirect>',
+        signInSuccessUrl: 'www.facebook.com',
         signInOptions: [
           // Leave the lines as is for the providers you want to offer your users.
- firebase.auth.EmailAuthProvider.PROVIDER_ID
+
+          firebase.auth.EmailAuthProvider.PROVIDER_ID
         ],
-        // Terms of service url. 
+        // Terms of service url.
         tosUrl: '<your-tos-url>'
       };
 
@@ -44,7 +39,7 @@
       // The start method will wait until the DOM is loaded.
       ui.start('#signin', uiConfig);
     </script>
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Candal">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Candal">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -54,348 +49,352 @@
         Author: BootstrapMade.com
         Author URL: https://bootstrapmade.com
     ======================================================= -->
-   
-   </head>
-          <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
-    <!--banner-->
-  <section id="banner" class="banner">
-    <div class="bg-color">
-      <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-          <div class="col-md-12">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#"><img src="img/logo.png" class="img-responsive" style="width: 140px; margin-top: -16px;"></a>
-            </div>
-            <div class="collapse navbar-collapse navbar-right" id="myNavbar">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="#banner">Home</a></li>
-                
-                <li class=""><a href="#services">Services</a></li>
-                <li class=""><a href="#testimonial">Testimonial</a></li>
-                <li class=""><a href="#footer">About</a></li>
-              </ul>
-            </div>
-        </div>
-        </div>
-      </nav>
-      <div class="container">
-        <div class="row">
-          <div class="banner-info">
-            <div class="banner-logo text-center">
-              <img src="img/logo.png" class="img-responsive">
-            </div>
-            </div>
+    <script src="https://cdn.firebase.com/libs/firebaseui/1.0.0/firebaseui.js"></script>
+<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/1.0.0/firebaseui.css" />
+  </head>
+  <!--Start of Tawk.to Script-->
+<!--End of Tawk.to Script-->
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+  	<!--banner-->
+	<section id="banner" class="banner">
+		<div class="bg-color">
+			<nav class="navbar navbar-default navbar-fixed-top">
+			  <div class="container">
+			  	<div class="col-md-12">
+				    <div class="navbar-header">
+				      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				      </button>
+				      <a class="navbar-brand" href="#"><img src="img/logo.png" class="img-responsive" style="width: 140px; margin-top: -16px;"></a>
+				    </div>
+				    <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+				      <ul class="nav navbar-nav">
+				        <li class="active"><a href="#banner">Home</a></li>
+				        
+				        <li class=""><a href="#services">Services</a></li>
+				        <li class=""><a href="#testimonial">Testimonial</a></li>
+				        <li class=""><a href="#footer">About</a></li>
+				      </ul>
+				    </div>
+				</div>
+			  </div>
+			</nav>
+			<div class="container">
+				<div class="row">
+					<div class="banner-info">
+						<div class="banner-logo text-center">
+							<img src="img/logo.png" class="img-responsive">
+						</div>
+						</div>
 
-            <!-- sign in -->
+						<!-- sign in -->
 
-            <div id="signin" style="width: 385px; background-color: rgba(0,0,0,0.8); ; display: hidden; margin-left: 390px;">
-              
-            </div>
+						<div id="signin" style="width: 385px; background-color: rgba(0,0,0,0.8); ; display: none; margin-left: 390px;">
+							
+						</div>
 
-            <!-- /sign in -->
-            <div id="link1" class="banner-text text-center">
-              <h1 class="white">Healthcare at your desk!!</h1>
-              
-              <button  class="btn btn-appoint" onclick="signin()">SIGN UP</button>
-            <br>           
+						<!-- /sign in -->
+						<div id="link1" class="banner-text text-center">
+							<h1 class="white">Healthcare at your desk!!</h1>
+							
+							<button  class="btn btn-appoint" onclick="signin()"><a href="Dashboard.html">SIGN UP</a></button>
+						</br>
+						
 
-            <div class="overlay-detail text-center">
-                    
-                   </div>   
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--/ banner-->
-  <!--service-->
-  <br><br><br>
-  <!--/ service-->
-  <!--cta-->
-    
-  <!--cta-->
-  <!--about-->
-  <section id="services" class="section-padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3 col-sm-4 col-xs-12">
-              <div class="section-title">
-                <h2 class="head-title lg-line">Doctor Plus <br>Our Services</h2>
-                <hr class="botm-line">
-                <p class="sec-para">Our website provides the Doctors a simple,easy-to-use interface and an efficent way to maintain and retrieve the records of patients as well as connect with other Doctors  </p>
-              </div>
-          </div>
-          <div class="col-md-9 col-sm-6 col-xs-10" style="float:left;">
-             <div style="visibility: visible;" class="col-sm-9 more-features-box">
-                <div class="more-features-box-text">
-                  <div class="more-features-box-text-icon"> <i class="fa fa-angle-right" aria-hidden="true"></i> </div>
-                  <div class="more-features-box-text-description">
-                    <h3>Doctors.</h3>
-                    <p><div class="col-md-4 col-sm-4"></div></div>
-          
-        </div>
-        <ol>
-        <li>
-        <div class="col-md-4 col-sm-4">
-          <div class="service-info">
-            <div class="icon">
-              <i class="fa fa-wechat"></i>
-            </div>
-            <div class="icon-info">
-              <h4>Live Chat With Patients</h4>
-              
-            </div>
-          </div>
-        </div>
-        </li>
-        <li>
-        <div>
-          <div class="service-info">
-            <div class="icon">
-              <i class="fa fa-ambulance"></i>
-            </div>
-            <div class="icon-info">
-              <h4>Emergency Services</h4>
-              
-            </div>
-          </div>
-        </div>
-        </li>
-        <li>
-          <div  class="col-md-4 col-sm-4">
-            <div class="service-info">
-              <div class="icon">
-                <i class="fa fa-sticky-note"></i>
-              </div>
-              <div class="icon-info">
-                <h4>Send Reports Online</h4>
-                
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div>
-            <div class="service-info">
-              <div class="icon">
-                <i class="fa fa-database"></i>
-              </div>
-              <div class="icon-info">
-                <h4>Patient Database Maintenance</h4>
-                            
-              </div>
-            </div>
-          </div>
-        </li>
-        
-      </ol>
-        <br><br>
+						<div class="overlay-detail text-center">
+			              
+			             </div>		
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--/ banner-->
+	<!--service-->
+	</br></br></br>
+	<!--/ service-->
+	<!--cta-->
+		
+	<!--cta-->
+	<!--about-->
+	<section id="services" class="section-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-4 col-xs-12">
+			        <div class="section-title">
+			          <h2 class="head-title lg-line">Doctor Plus <br>Our Services</h2>
+			          <hr class="botm-line">
+			          <p class="sec-para">Our website provides the Doctors a simple,easy-to-use interface and an efficent way to maintain and retrieve the records of patients as well as connect with other Doctors  </p>
+			        </div>
+			    </div>
+			    <div class="col-md-9 col-sm-6 col-xs-10" style="float:left;">
+			       <div style="visibility: visible;" class="col-sm-9 more-features-box">
+			          <div class="more-features-box-text">
+			            <div class="more-features-box-text-icon"> <i class="fa fa-angle-right" aria-hidden="true"></i> </div>
+			            <div class="more-features-box-text-description">
+				            <h3>Doctors.</h3>
+				            <p><div class="col-md-4 col-sm-4"></div></div>
+					
+				</div>
+				<ol>
+				<li>
+				<div class="col-md-4 col-sm-4">
+					<div class="service-info">
+						<div class="icon">
+							<i class="fa fa-wechat"></i>
+						</div>
+						<div class="icon-info">
+							<h4>Live Chat With Patients</h4>
+							
+						</div>
+					</div>
+				</div>
+				</li>
+				<li>
+				<div>
+					<div class="service-info">
+						<div class="icon">
+							<i class="fa fa-ambulance"></i>
+						</div>
+						<div class="icon-info">
+							<h4>Emergency Services</h4>
+							
+						</div>
+					</div>
+				</div>
+				</li>
+				<li>
+					<div  class="col-md-4 col-sm-4">
+						<div class="service-info">
+							<div class="icon">
+								<i class="fa fa-sticky-note"></i>
+							</div>
+							<div class="icon-info">
+								<h4>Send Reports Online</h4>
+								
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div>
+						<div class="service-info">
+							<div class="icon">
+								<i class="fa fa-database"></i>
+							</div>
+							<div class="icon-info">
+								<h4>Patient Database Maintenance</h4>
+														
+							</div>
+						</div>
+					</div>
+				</li>
+				
+			</ol>
+				</br></br>
 
-        <div class="container" class="pad">
-      <div class="row">
-        <div class="col-md-3 col-sm-4 col-xs-12">
-              <div class="section-title">
-                <h2 class="head-title lg-line"> Patient Plus <br>Our Services</h2>
-                <hr class="botm-line">
-                <p class="sec-para">
-                    We Provide the Patients with an Android app in which the patients can access the reports which are uploaded by the doctor.The app includes all the emergency services which an elderly patient might need. 
-                </p>
-              </div>
-          </div>
-          <div class="col-md-9 col-sm-6 col-xs-10" style="float:left;">
-             <div style="visibility: visible;" class="col-sm-9 more-features-box">
-                <div class="more-features-box-text">
-                  <div class="more-features-box-text-icon"> <i class="fa fa-angle-right" aria-hidden="true"></i> </div>
-                  <div class="more-features-box-text-description">
-                    <h3>Patients.</h3>
-                    <p><div class="col-md-4 col-sm-4"></div></div>
-          
-        </div>
-        <ol>
-        <li>
-        <div class="col-md-4 col-sm-4">
-          <div class="service-info">
-            <div class="icon">
-              <i class="fa fa-wechat"></i>
-            </div>
-            <div class="icon-info">
-              <h4>Live Chat With Doctors</h4>
-              
-            </div>
-          </div>
-        </div>
-        </li>
-        <li>
-        <div>
-          <div class="service-info">
-            <div class="icon">
-              <i class="fa fa-ambulance"></i>
-            </div>
-            <div class="icon-info">
-              <h4>Emergency Services</h4>
-              
-            </div>
-          </div>
-        </div>
-        </li>
-        <li>
-          <div style="display: inline-block;" class="col-md-4 col-sm-4">
-            <div class="service-info">
-              <div class="icon">
-                <i class="fa fa-android"></i>
-              </div>
-              <div class="icon-info">
-                <h4>Android Application</h4>
-                
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div>
-            <div class="service-info">
-              <div class="icon">
-              <i class="fa fa-sticky-note-o"></i>
-              </div>
-              <div class="icon-info">
-                <h4>See Reports And Prescriptions Online</h4>
-                
-              </div>
-            </div>
-          </div>
-        </li>
-      </ol>
-        <br><br>
-  </section>
-  <br>
-  <br>
-  <br><br>
-  <br><br>
-  <br><br>
-  <!--/ about-->
-  <!--doctor team-->
-  <section id="doctor-team" class="section-padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h2 class="ser-title">Meet Our Doctors!</h2>
-          <hr class="botm-line">
-        </div>
-        <div class="col-md-3 col-sm-3 col-xs-6">
-            <div class="thumbnail"> 
-              <img src="img/doctor1.jpg" alt="..." class="team-img">
-              <div class="caption">
-                <h3>Jessica Wally</h3>
-                <p>Doctor</p>
-                <ul class="list-inline">
-                  <li><a><i class="fa fa-facebook"></i></a></li>
-                  <li><a><i class="fa fa-twitter"></i></a></li>
-                  <li><a><i class="fa fa-google-plus"></i></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-3 col-xs-6">
-            <div class="thumbnail"> 
-              <img src="img/doctor2.jpg" alt="..." class="team-img">
-              <div class="caption">
-                <h3>Iai Donas</h3>
-                <p>Doctor</p>
-                <ul class="list-inline">
-                  <li><a><i class="fa fa-facebook"></i></a></li>
-                  <li><a><i class="fa fa-twitter"></i></a></li>
-                  <li><a><i class="fa fa-google-plus"></i></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-3 col-xs-6">
-            <div class="thumbnail"> 
-              <img src="img/doctor3.jpg" alt="..." class="team-img">
-              <div class="caption">
-                <h3>Amanda Denyl</h3>
-                <p>Doctor</p>
-                <ul class="list-inline">
-                  <li><a><i class="fa fa-facebook"></i></a></li>
-                  <li><a><i class="fa fa-twitter"></i></a></li>
-                  <li><a><i class="fa fa-google-plus"></i></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-3 col-xs-6">
-            <div class="thumbnail"> 
-              <img src="img/doctor4.jpg" alt="..." class="team-img">
-              <div class="caption">
-                <h3>Jason Davis</h3>
-                <p>Doctor</p>
-                <ul class="list-inline">
-                  <li><a><i class="fa fa-facebook"></i></a></li>
-                  <li><a><i class="fa fa-twitter"></i></a></li>
-                  <li><a><i class="fa fa-google-plus"></i></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-      </div>
-    </div>
-  </section>
-  <!--/ doctor team-->
-  <!--testimonial-->
-  <section id="testimonial" class="section-padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h2 class="ser-title">see what patients are saying?</h2>
-          <hr class="botm-line">
-        </div>
-        <div class="col-md-4 col-sm-4">
-          <div class="testi-details">
-            <!-- Paragraph -->
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          </div>
-          <div class="testi-info">
-            <!-- User Image -->
-            <a href="#"><img src="img/thumb.png" alt="" class="img-responsive"></a>
-            <!-- User Name -->
-            <h3>Alex<span>Texas</span></h3>
-          </div>
-        </div>
-          <div class="col-md-4 col-sm-4">
-          <div class="testi-details">
-            <!-- Paragraph -->
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          </div>
-          <div class="testi-info">
-            <!-- User Image -->
-            <a href="#"><img src="img/thumb.png" alt="" class="img-responsive"></a>
-            <!-- User Name -->
-            <h3>Alex<span>Texas</span></h3>
-          </div>
-        </div>
-          <div class="col-md-4 col-sm-4">
-          <div class="testi-details">
-            <!-- Paragraph -->
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          </div>
-          <div class="testi-info">
-            <!-- User Image -->
-            <a href="#"><img src="img/thumb.png" alt="" class="img-responsive"></a>
-            <!-- User Name -->
-            <h3>Alex<span>Texas</span></h3>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--/ testimonial-->
+				<div class="container" class="pad">
+			<div class="row">
+				<div class="col-md-3 col-sm-4 col-xs-12">
+			        <div class="section-title">
+			          <h2 class="head-title lg-line"> Patient Plus <br>Our Services</h2>
+			          <hr class="botm-line">
+			          <p class="sec-para">
+			          		We Provide the Patients with an Android app in which the patients can access the reports which are uploaded by the doctor.The app includes all the emergency services which an elderly patient might need. 
+			          </p>
+			        </div>
+			    </div>
+			    <div class="col-md-9 col-sm-6 col-xs-10" style="float:left;">
+			       <div style="visibility: visible;" class="col-sm-9 more-features-box">
+			          <div class="more-features-box-text">
+			            <div class="more-features-box-text-icon"> <i class="fa fa-angle-right" aria-hidden="true"></i> </div>
+			            <div class="more-features-box-text-description">
+				            <h3>Patients.</h3>
+				            <p><div class="col-md-4 col-sm-4"></div></div>
+					
+				</div>
+				<ol>
+				<li>
+				<div class="col-md-4 col-sm-4">
+					<div class="service-info">
+						<div class="icon">
+							<i class="fa fa-wechat"></i>
+						</div>
+						<div class="icon-info">
+							<h4>Live Chat With Doctors</h4>
+							
+						</div>
+					</div>
+				</div>
+				</li>
+				<li>
+				<div>
+					<div class="service-info">
+						<div class="icon">
+							<i class="fa fa-ambulance"></i>
+						</div>
+						<div class="icon-info">
+							<h4>Emergency Services</h4>
+							
+						</div>
+					</div>
+				</div>
+				</li>
+				<li>
+					<div style="display: inline-block;" class="col-md-4 col-sm-4">
+						<div class="service-info">
+							<div class="icon">
+								<i class="fa fa-android"></i>
+							</div>
+							<div class="icon-info">
+								<h4>Android Application</h4>
+								
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div>
+						<div class="service-info">
+							<div class="icon">
+							<i class="fa fa-sticky-note-o"></i>
+							</div>
+							<div class="icon-info">
+								<h4>See Reports And Prescriptions Online</h4>
+								
+							</div>
+						</div>
+					</div>
+				</li>
+			</ol>
+				</br></br>
+	</section>
+	<br>
+	</br>
+	<br></br>
+	<br></br>
+	<br></br>
+	<!--/ about-->
+	<!--doctor team-->
+	<section id="doctor-team" class="section-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="ser-title">Meet Our Doctors!</h2>
+					<hr class="botm-line">
+				</div>
+				<div class="col-md-3 col-sm-3 col-xs-6">
+			      <div class="thumbnail"> 
+			      	<img src="img/doctor1.jpg" alt="..." class="team-img">
+			        <div class="caption">
+			          <h3>Jessica Wally</h3>
+			          <p>Doctor</p>
+			          <ul class="list-inline">
+			            <li><a><i class="fa fa-facebook"></i></a></li>
+			            <li><a><i class="fa fa-twitter"></i></a></li>
+			            <li><a><i class="fa fa-google-plus"></i></a></li>
+			          </ul>
+			        </div>
+			      </div>
+			    </div>
+			    <div class="col-md-3 col-sm-3 col-xs-6">
+			      <div class="thumbnail"> 
+			      	<img src="img/doctor2.jpg" alt="..." class="team-img">
+			        <div class="caption">
+			          <h3>Iai Donas</h3>
+			          <p>Doctor</p>
+			          <ul class="list-inline">
+			            <li><a><i class="fa fa-facebook"></i></a></li>
+			            <li><a><i class="fa fa-twitter"></i></a></li>
+			            <li><a><i class="fa fa-google-plus"></i></a></li>
+			          </ul>
+			        </div>
+			      </div>
+			    </div>
+			    <div class="col-md-3 col-sm-3 col-xs-6">
+			      <div class="thumbnail"> 
+			      	<img src="img/doctor3.jpg" alt="..." class="team-img">
+			        <div class="caption">
+			          <h3>Amanda Denyl</h3>
+			          <p>Doctor</p>
+			          <ul class="list-inline">
+			            <li><a><i class="fa fa-facebook"></i></a></li>
+			            <li><a><i class="fa fa-twitter"></i></a></li>
+			            <li><a><i class="fa fa-google-plus"></i></a></li>
+			          </ul>
+			        </div>
+			      </div>
+			    </div>
+			    <div class="col-md-3 col-sm-3 col-xs-6">
+			      <div class="thumbnail"> 
+			      	<img src="img/doctor4.jpg" alt="..." class="team-img">
+			        <div class="caption">
+			          <h3>Jason Davis</h3>
+			          <p>Doctor</p>
+			          <ul class="list-inline">
+			            <li><a><i class="fa fa-facebook"></i></a></li>
+			            <li><a><i class="fa fa-twitter"></i></a></li>
+			            <li><a><i class="fa fa-google-plus"></i></a></li>
+			          </ul>
+			        </div>
+			      </div>
+			    </div>
+			</div>
+		</div>
+	</section>
+	<!--/ doctor team-->
+	<!--testimonial-->
+	<section id="testimonial" class="section-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="ser-title">see what patients are saying?</h2>
+					<hr class="botm-line">
+				</div>
+				<div class="col-md-4 col-sm-4">
+					<div class="testi-details">
+						<!-- Paragraph -->
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+					<div class="testi-info">
+						<!-- User Image -->
+						<a href="#"><img src="img/thumb.png" alt="" class="img-responsive"></a>
+						<!-- User Name -->
+						<h3>Alex<span>Texas</span></h3>
+					</div>
+				</div>
+			    <div class="col-md-4 col-sm-4">
+					<div class="testi-details">
+						<!-- Paragraph -->
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+					<div class="testi-info">
+						<!-- User Image -->
+						<a href="#"><img src="img/thumb.png" alt="" class="img-responsive"></a>
+						<!-- User Name -->
+						<h3>Alex<span>Texas</span></h3>
+					</div>
+				</div>
+			    <div class="col-md-4 col-sm-4">
+					<div class="testi-details">
+						<!-- Paragraph -->
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+					<div class="testi-info">
+						<!-- User Image -->
+						<a href="#"><img src="img/thumb.png" alt="" class="img-responsive"></a>
+						<!-- User Name -->
+						<h3>Alex<span>Texas</span></h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--/ testimonial-->
 
-  <!-- new patient form -->
+	<!-- new patient form -->
 
 <section id="new_patient_form" class="section-padding" style="  display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -407,15 +406,15 @@
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.8); /* Black w/ opacity */">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h2 class="ser-title" style="font : rgb(255,255,255);">Patient's Details</h2>
-          <hr class="botm-line">
-        </div>
-        
-        <form action="" method="post" role="form" class="contactForm">
-            <div class="form-group">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="ser-title" style="font : rgb(255,255,255);">Patient's Details</h2>
+					<hr class="botm-line">
+				</div>
+				
+				<form action="" method="post" role="form" class="contactForm">
+				    <div class="form-group">
                         <input type="text" name="name" class="form-control br-radius-zero" id="name" placeholder="Patient's First Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                         <div class="validation"></div>
                     </div>
@@ -431,63 +430,63 @@
                         <input type="number" class="form-control br-radius-zero" name="subject" id="subject" placeholder="Patient's Age" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
                         <div class="validation"></div>
                     </div>
-                <div class="form-group">
-                    <label>
-                        <span class="form-control br-radius-zero">Sex</span>
-                        <select name="dropdown">
-                            <option>Male</option>
-                            <option>Female</option>
-                            <option>Others</option>
-                        </select>
-                        <div class="validation"></div>
-                    </label>
-                </div>
+		            <div class="form-group">
+		                <label>
+		                    <span class="form-control br-radius-zero">Sex</span>
+		                    <select name="dropdown">
+		                        <option>Male</option>
+		                        <option>Female</option>
+		                        <option>Others</option>
+		                    </select>
+		                    <div class="validation"></div>
+		                </label>
+		            </div>
                     <div class="form-group">
                         <textarea class="form-control br-radius-zero" name="message" rows="5" data-rule="required" data-msg="Health Problems" placeholder="Health Issue"></textarea>
                         <div class="validation"></div>
                     </div>
                     
-          <div class="form-action">
-            <button type="submit" class="btn btn-form" style="margin-bottom: 15px;">Add new Patient</button>
-          </div>
-          <div class="form-action">
-            <button type="submit" class="btn btn-form" onclick="div_hide()" style="display: inline-block;">Cancel</button>
-          </div>
-        </form>
-          
-        
-      </div>
-    </div>
-  </section>
+					<div class="form-action">
+						<button type="submit" class="btn btn-form" style="margin-bottom: 15px;">Add new Patient</button>
+					</div>
+					<div class="form-action">
+						<button type="submit" class="btn btn-form" onclick="div_hide()" style="display: inline-block;">Cancel</button>
+					</div>
+				</form>
+					
+				
+			</div>
+		</div>
+	</section>
 
-  <!-- /new patient form -->
-  
-<!--  
-  <section id="contact" class="section-padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h2 class="ser-title">Contact us</h2>
-          <hr class="botm-line">
-        </div>
-        <div class="col-md-4 col-sm-4">
-            <h3>Contact Info</h3>
-            <div class="space"></div>
-            <p><i class="fa fa-map-marker fa-fw pull-left fa-2x"></i>321 Awesome Street<br>
-              New York, NY 17022</p>
-            <div class="space"></div>
-            <p><i class="fa fa-envelope-o fa-fw pull-left fa-2x"></i>info@companyname.com</p>
-            <div class="space"></div>
-            <p><i class="fa fa-phone fa-fw pull-left fa-2x"></i>+1 800 123 1234</p>
-          </div>
-        <div class="col-md-8 col-sm-8 marb20">
-          <div class="contact-info">
-              <h3 class="cnt-ttl">Having Any Query! Or Book an appointment</h3>
-              <div class="space"></div>
+	<!-- /new patient form -->
+	
+<!-- 	
+	<section id="contact" class="section-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="ser-title">Contact us</h2>
+					<hr class="botm-line">
+				</div>
+				<div class="col-md-4 col-sm-4">
+			      <h3>Contact Info</h3>
+			      <div class="space"></div>
+			      <p><i class="fa fa-map-marker fa-fw pull-left fa-2x"></i>321 Awesome Street<br>
+			        New York, NY 17022</p>
+			      <div class="space"></div>
+			      <p><i class="fa fa-envelope-o fa-fw pull-left fa-2x"></i>info@companyname.com</p>
+			      <div class="space"></div>
+			      <p><i class="fa fa-phone fa-fw pull-left fa-2x"></i>+1 800 123 1234</p>
+			    </div>
+				<div class="col-md-8 col-sm-8 marb20">
+					<div class="contact-info">
+							<h3 class="cnt-ttl">Having Any Query! Or Book an appointment</h3>
+							<div class="space"></div>
                             <div id="sendmessage">Your message has been sent. Thank you!</div>
                             <div id="errormessage"></div>
-              <form action="" method="post" role="form" class="contactForm">
-                  <div class="form-group">
+							<form action="" method="post" role="form" class="contactForm">
+							    <div class="form-group">
                                     <input type="text" name="name" class="form-control br-radius-zero" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                                     <div class="validation"></div>
                                 </div>
@@ -504,61 +503,60 @@
                                     <div class="validation"></div>
                                 </div>
                                 
-                <div class="form-action">
-                  <button type="submit" class="btn btn-form">Send Message</button>
-                </div>
-              </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-   -->
-  <!--footer-->
-  <footer id="footer">
-    <div class="top-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 col-sm-4 marb20">
-              <div class="ftr-tle">
-                <h4 class="white no-padding">About Us</h4>
-              </div>
-              <div class="info-sec">
-                <p>Praesent convallis tortor et enim laoreet, vel consectetur purus latoque penatibus et dis parturient.</p>
-              </div>
-          </div>
-          <div class="col-md-4 col-sm-4 marb20">
-            <div class="ftr-tle">
-              <h4 class="white no-padding">Quick Links</h4>
-            </div>
-            <div class="info-sec">
-              <ul class="quick-info">
-                <li><a href="index.html"><i class="fa fa-circle"></i>Home</a></li>
-                <li><a href="#service"><i class="fa fa-circle"></i>Service</a></li>
-                <li><a href="#contact"><i class="fa fa-circle"></i>Appointment</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-4 marb20">
-            <div class="ftr-tle">
-              <h4 class="white no-padding">Follow us</h4>
-            </div>
-            <div class="info-sec">
-              <ul class="social-icon">
-                <li class="bglight-blue"><i class="fa fa-facebook"></i></li>
-                <li class="bgred"><i class="fa fa-google-plus"></i></li>
-                <li class="bgdark-blue"><i class="fa fa-linkedin"></i></li>
-                <li class="bglight-blue"><i class="fa fa-twitter"></i></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-  </footer>
-  <!--/ footer-->
-    
+								<div class="form-action">
+									<button type="submit" class="btn btn-form">Send Message</button>
+								</div>
+							</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	 -->
+	<!--footer-->
+	<footer id="footer">
+		<div class="top-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-4 marb20">
+							<div class="ftr-tle">
+								<h4 class="white no-padding">About Us</h4>
+							</div>
+							<div class="info-sec">
+								<p>I dont know what to put in here.. So Just writing this to make it look as if it is full of data and nothing is empty. </p>
+							</div>
+					</div>
+					<div class="col-md-4 col-sm-4 marb20">
+						<div class="ftr-tle">
+							<h4 class="white no-padding">Quick Links</h4>
+						</div>
+						<div class="info-sec">
+							<ul class="quick-info">
+								<li><a href="index.html"><i class="fa fa-circle"></i>Home</a></li>
+								<li><a href="#service"><i class="fa fa-circle"></i>Service</a></li>
+								<li><a href="#contact"><i class="fa fa-circle"></i>Appointment</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 marb20">
+						<div class="ftr-tle">
+							<h4 class="white no-padding">Follow us</h4>
+						</div>
+						<div class="info-sec">
+							<ul class="social-icon">
+								<li class="bglight-blue"><i class="fa fa-facebook"></i></li>
+								<li class="bgred"><i class="fa fa-google-plus"></i></li>
+								<li class="bgdark-blue"><i class="fa fa-linkedin"></i></li>
+								<li class="bglight-blue"><i class="fa fa-twitter"></i></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</footer>
+	<!--/ footer-->
 <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
 
 <script src="https://www.gstatic.com/firebasejs/3.6.2/firebase-app.js"></script>
@@ -569,17 +567,31 @@
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/custom.js"></script>
+    <script src="contactform/contactform.js"></script>
     <script >
-      function div_show(){
-        document.getElementById('new_patient_form').style.display = "block";
-      }
-      function div_hide(){
-        document.getElementById('new_patient_form').style.display = "none";
-      }
-      function signin(){
-          document.getElementById('signin').style.display = "block";
-        document.getElementById('link1').style.display = "none";
-      }
+    	function div_show(){
+    		document.getElementById('new_patient_form').style.display = "block";
+    	}
+    	function div_hide(){
+    		document.getElementById('new_patient_form').style.display = "none";
+    	}
+    	function signin(){
+    	    document.getElementById('signin').style.display = "block";
+    		document.getElementById('link1').style.display = "none";
+    	}
     </script>
+    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5872252668c397544aad03d5/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
   </body>
 </html>
