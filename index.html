@@ -8,8 +8,20 @@
        * Firebase Console > Overview > Add Firebase to your web app. *
        ***************************************************************************************** -->
        
-0
 
+<script src="https://www.gstatic.com/firebasejs/3.6.6/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyARl_11Gx0o-H7O72iixE-MC0AgspVXpBs",
+    authDomain: "my-doctor-cac09.firebaseapp.com",
+    databaseURL: "https://my-doctor-cac09.firebaseio.com",
+    storageBucket: "my-doctor-cac09.appspot.com",
+    messagingSenderId: "275526959543"
+  };
+  firebase.initializeApp(config);
+</script>
+    
     <script type="text/javascript">
       initApp = function() {
         firebase.auth().onAuthStateChanged(function(user) {
